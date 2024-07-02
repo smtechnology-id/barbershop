@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Barbershop Queue</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,13 +15,11 @@
                 <div class="logo">
                     <h1>Barbershop</h1>
                 </div>
-                <div class="login-btn">
-                    <a href="login.php" class="btn">Login</a>
-                </div>
             </nav>
             <div class="banner-content">
                 <h1>Welcome to Our Barbershop</h1>
                 <p>Experience the best haircut with us</p>
+                <a href="login.php" class="btn login-btn">Login</a>
             </div>
         </header>
         <main>
@@ -29,20 +27,36 @@
                 <h2>Haircut Models</h2>
                 <div class="catalog-container">
                     <div class="card">
-                        <img src="images/model1.jpg" alt="Model 1">
+                        <img src="images/curtain.jpg" alt="Model 1">
                         <div class="card-content">
-                            <h3>Model 1</h3>
-                            <p>Price: $50</p>
+                            <h3>Curtain Haircut</h3>
+                            <p>Price: Rp. 50.000</p>
                         </div>
-                        <button onclick="selectModel('Model 1', 50)">Select</button>
+                        <a href="pemesanan.php?model=curtain" class="select">Select</a>
                     </div>
                     <div class="card">
-                        <img src="images/model2.jpg" alt="Model 2">
+                        <img src="images/fringe.jpg" alt="Model 2">
                         <div class="card-content">
-                            <h3>Model 2</h3>
-                            <p>Price: $60</p>
+                            <h3>Fringe Haircut</h3>
+                            <p>Price: Rp. 50.000</p>
                         </div>
-                        <button onclick="selectModel('Model 2', 60)">Select</button>
+                        <a href="pemesanan.php?model=fringe" class="select">Select</a>
+                    </div>
+                    <div class="card">
+                        <img src="images/comma.jpg" alt="Model 2">
+                        <div class="card-content">
+                            <h3>Comma Hair</h3>
+                            <p>Price: Rp. 70.000</p>
+                        </div>
+                        <a href="pemesanan.php?model=comma" class="select">Select</a>
+                    </div>
+                    <div class="card">
+                        <img src="images/undercut.jpg" alt="Model 2">
+                        <div class="card-content">
+                            <h3>Undercut</h3>
+                            <p>Price: Rp. 70.000</p>
+                        </div>
+                        <a href="pemesanan.php?model=undercut" class="select">Select</a>
                     </div>
                     <!-- Tambahkan lebih banyak model sesuai kebutuhan -->
                 </div>

@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    /* Lebar maksimum konten */
+    margin: 0 auto;
+    /* Pusatkan konten di tengah */
+    padding: 0 20px;
+    /* Ruang padding di sisi kiri dan kanan */
+}
+
+header.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.logo {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.queue {
+    margin-top: 20px;
+}
+
+.queue h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.queue-table {
+    overflow-x: auto;
+}
+
+.queue-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.queue-table th,
+.queue-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.queue-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.queue-status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.queue-status.in-progress {
+    background-color: #ffc107;
+    /* Warna untuk status sedang diproses */
+    color: #333;
+}
+
+.queue-status.completed {
+    background-color: #28a745;
+    /* Warna untuk status selesai */
+    color: white;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* CSS untuk tombol warna merah (danger) */
+.btn {
+    display: inline-block;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.btn-danger {
+
+    background-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-danger:active {
+    background-color: #bd2130;
+}
+
+.btn-danger:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}

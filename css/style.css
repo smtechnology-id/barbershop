@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden; /* Tambahkan ini untuk menghindari scroll horizontal */
 }
 
 .container {
@@ -13,23 +14,19 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1200px; /* Lebar maksimum konten */
-    margin: 0 auto; /* Pusatkan konten di tengah */
-    padding: 0 20px; /* Ruang padding di sisi kiri dan kanan */
 }
 
 header.banner {
     background: url('../images/banner.jpg') no-repeat center center;
-    background-size: cover; /* Ukuran gambar sesuai dengan area */
-    height: 100vh; /* Menggunakan seluruh tinggi viewport */
+    background-size: cover;
+    height: 100vh;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 100%;
-    position: relative; /* Untuk stacking navbar di atas banner */
-    overflow: hidden; /* Mengatasi masalah pemotongan gambar */
+    position: relative;
 }
 
 .navbar {
@@ -40,8 +37,8 @@ header.banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0; /* Padding atas dan bawah pada navbar */
-    z-index: 1000; /* Pastikan navbar ada di atas banner */
+    padding: 20px;
+    z-index: 1000;
 }
 
 .logo h1 {
@@ -75,8 +72,7 @@ header.banner {
 }
 
 main {
-    padding: 20px 0; /* Padding atas dan bawah pada konten utama */
-    width: 100%;
+    padding: 20px;
 }
 
 #catalog {
@@ -99,6 +95,8 @@ main {
     width: 300px;
     margin: 20px;
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
@@ -124,7 +122,7 @@ main {
     margin: 10px 0;
 }
 
-button {
+a.select {
     background: #333;
     color: white;
     border: none;
@@ -135,7 +133,7 @@ button {
     transition: background 0.3s;
 }
 
-button:hover {
+a.select:hover {
     background: #555;
 }
 
@@ -145,7 +143,100 @@ footer {
     text-align: center;
     padding: 20px;
     width: 100%;
-    bottom: 0;
+}
+
+/* CSS untuk halaman login */
+.login-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #555;
+}
+
+.modal {
+    display: none; /* Sembunyikan modal secara default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparansi latar belakang */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px; /* Lebar maksimum modal */
+    position: relative;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* Media Queries */
