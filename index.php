@@ -15,11 +15,13 @@
                 <div class="logo">
                     <h1>Barbershop</h1>
                 </div>
+                <div class="menu">
+                    <a href="login.php" class="btn login-btn">Login</a>
+                </div>
             </nav>
             <div class="banner-content">
                 <h1>Welcome to Our Barbershop</h1>
                 <p>Experience the best haircut with us</p>
-                <a href="login.php" class="btn login-btn">Login</a>
             </div>
         </header>
         <main>

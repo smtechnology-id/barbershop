@@ -42,18 +42,19 @@ if (isset($_GET['id'])) {
 
     <main>
         <div class="container">
-            <section class="booking-form">
+            <section class="booking-form" style="display: flex; flex-direction:column; align-items:center">
                 <h1>Pemesanan Berhasil!</h1>
                 <p>Terima kasih telah melakukan pemesanan di Barbershop. Detail pesanan Anda:</p>
                 <ul>
-                    <li><strong>Nomor Antrian:</strong> <?php echo $nomor_antrian; ?></li>
-                    <li><strong>Nama:</strong> <?php echo $nama; ?></li>
-                    <li><strong>Nomor HP:</strong> <?php echo $nomor_hp; ?></li>
-                    <li><strong>Model Potongan:</strong> <?php echo $model_potongan; ?></li>
-                    <li><strong>Harga:</strong> Rp. <?php echo number_format($harga, 0, ',', '.'); ?></li>
+                    <li style="margin-bottom: 10px;"><strong>Nomor Antrian:</strong> <?php echo $nomor_antrian; ?></li>
+                    <li style="margin-bottom: 10px;"><strong>Nama:</strong> <?php echo $nama; ?></li>
+                    <li style="margin-bottom: 10px;"><strong>Nomor HP:</strong> <?php echo $nomor_hp; ?></li>
+                    <li style="margin-bottom: 10px;"><strong>Model Potongan:</strong> <?php echo $model_potongan; ?></li>
+                    <li style="margin-bottom: 10px;"><strong>Harga:</strong> Rp. <?php echo number_format($harga, 0, ',', '.'); ?></li>
 
                 </ul>
                 <a href="index.php" class="btn">Kembali ke Beranda</a>
+                <br>
                 <a href="download.php?id=<?php echo $id; ?>" class="btn">Download Detail Pemesanan (TXT)</a>
             </section>
         </div>
